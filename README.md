@@ -1,6 +1,6 @@
 # Skill LinkedIn per Claude
 
-Quattro skill in italiano per lavorare su LinkedIn con Claude. Ognuna è una cartella in `skills/` con un `SKILL.md`.
+Quattro skill in italiano per lavorare su LinkedIn con Claude, più una skill generica per il giornale PDF di marca. Ognuna è una cartella in `skills/` con un `SKILL.md`.
 
 | Skill | A cosa serve |
 |---|---|
@@ -8,6 +8,7 @@ Quattro skill in italiano per lavorare su LinkedIn con Claude. Ognuna è una car
 | [`linkedin-pagina-aziendale`](skills/linkedin-pagina-aziendale/SKILL.md) | Creazione o ottimizzazione di una pagina aziendale: testi, impostazioni, immagini, post di lancio e primo piano editoriale. |
 | [`linkedin-articoli-da-sito`](skills/linkedin-articoli-da-sito/SKILL.md) | Articoli o newsletter LinkedIn con Tone of Voice e argomento presi da un sito di riferimento. |
 | [`linkedin-piano-editoriale`](skills/linkedin-piano-editoriale/SKILL.md) | Piano editoriale (1 post al giorno + 1 articolo a settimana), bozze, immagini con ChatGPT o Nano Banana, pubblicazione via Chrome con conferma. |
+| [`giornale-di-marca`](skills/giornale-di-marca/SKILL.md) | Giornale PDF personale con l'identità di un marchio (logo, palette, font, voce), personalizzato con un questionario. Si appoggia alla skill `leaderai-giornale`, che deve essere installata a parte. |
 
 Tutte chiedono all'utente di caricare logo e immagini da usare e non rigenerano né alterano mai un logo esistente. Nessuna contiene dati di un cliente specifico.
 
