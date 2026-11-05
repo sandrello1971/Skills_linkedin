@@ -1,4 +1,4 @@
-# Skill LinkedIn per Claude
+# eppure_linkedin_skills – Skill LinkedIn per Claude
 
 Quattro skill in italiano per lavorare su LinkedIn con Claude, più una skill generica per il giornale PDF di marca. Ognuna è una cartella in `skills/` con un `SKILL.md`: istruzioni che Claude legge e segue quando le richiami.
 
@@ -22,13 +22,13 @@ Serve solo Node.js (per `npx`). Nessun account, nessuna pubblicazione su npm: il
 
 ```bash
 # Tutte le skill, per tutti i tuoi progetti, in Claude Code
-npx skills add sandrello1971/Skills_linkedin --all -g -a claude-code -y
+npx skills add sandrello1971/eppure_linkedin_skills --all -g -a claude-code -y
 
 # Vedere l'elenco senza installare
-npx skills add sandrello1971/Skills_linkedin --list
+npx skills add sandrello1971/eppure_linkedin_skills --list
 
 # Solo una skill
-npx skills add sandrello1971/Skills_linkedin --skill linkedin-piano-editoriale -g -a claude-code
+npx skills add sandrello1971/eppure_linkedin_skills --skill linkedin-piano-editoriale -g -a claude-code
 ```
 
 Per aggiornare o rimuovere:
@@ -42,7 +42,7 @@ Il CLI [`skills`](https://github.com/vercel-labs/skills) funziona anche con altr
 
 ### Installazione manuale – Claude Code (terminale o app desktop)
 
-1. Scarica il repository: `git clone https://github.com/sandrello1971/Skills_linkedin.git`
+1. Scarica il repository: `git clone https://github.com/sandrello1971/eppure_linkedin_skills.git`
 2. Copia le cartelle che ti servono dentro la cartella delle skill:
    - per averle in **tutti i progetti**: `~/.claude/skills/`
    - per averle solo in **un progetto**: `.claude/skills/` nella cartella del progetto
@@ -50,7 +50,7 @@ Il CLI [`skills`](https://github.com/vercel-labs/skills) funziona anche con altr
    Esempio per tutte e cinque:
    ```bash
    mkdir -p ~/.claude/skills
-   cp -r Skills_linkedin/skills/* ~/.claude/skills/
+   cp -r eppure_linkedin_skills/skills/* ~/.claude/skills/
    ```
 3. Riavvia Claude Code o apri una nuova sessione. Le skill compaiono nell'elenco delle skill disponibili.
 
@@ -58,7 +58,7 @@ Il CLI [`skills`](https://github.com/vercel-labs/skills) funziona anche con altr
 
 1. Comprimi in zip **la cartella di una singola skill**, in modo che lo zip contenga la cartella e, dentro, il file `SKILL.md`. Esempio da terminale:
    ```bash
-   cd Skills_linkedin/skills
+   cd eppure_linkedin_skills/skills
    zip -r linkedin-pagina-aziendale.zip linkedin-pagina-aziendale
    ```
 2. Apri **Impostazioni** e cerca la sezione dedicata alle skill (il nome del menu può cambiare tra versioni).
