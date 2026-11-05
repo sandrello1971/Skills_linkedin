@@ -16,7 +16,31 @@ Tutte chiedono all'utente di caricare logo e immagini da usare e non rigenerano 
 
 ## Come installare
 
-### Claude Code (terminale o app desktop)
+### Installazione rapida (consigliata) – un solo comando, nessuna copia
+
+Serve solo Node.js (per `npx`). Nessun account, nessuna pubblicazione su npm: il comando legge direttamente questo repository.
+
+```bash
+# Tutte le skill, per tutti i tuoi progetti, in Claude Code
+npx skills add sandrello1971/Skills_linkedin --all -g -a claude-code -y
+
+# Vedere l'elenco senza installare
+npx skills add sandrello1971/Skills_linkedin --list
+
+# Solo una skill
+npx skills add sandrello1971/Skills_linkedin --skill linkedin-piano-editoriale -g -a claude-code
+```
+
+Per aggiornare o rimuovere:
+
+```bash
+npx skills update
+npx skills remove
+```
+
+Il CLI [`skills`](https://github.com/vercel-labs/skills) funziona anche con altri agenti (Codex, Cursor, Gemini CLI e altri): togli `-a claude-code` per scegliere dal menu.
+
+### Installazione manuale – Claude Code (terminale o app desktop)
 
 1. Scarica il repository: `git clone https://github.com/sandrello1971/Skills_linkedin.git`
 2. Copia le cartelle che ti servono dentro la cartella delle skill:
