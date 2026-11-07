@@ -36,14 +36,30 @@ Fai le domande in un unico messaggio. Se l'utente ha già un profilo cliente ide
 
 ### 1. Definire la ricerca
 - Costruisci insieme all'utente i filtri (ruolo, zona, settore, dimensione azienda). Meglio ricerche strette che producono pochi profili buoni.
+- Usa query mirate: una ricerca generica come "titolare PMI Milano" restituisce soprattutto multinazionali, consulenti e reti di professionisti. Meglio settore + ruolo + zona, oppure partire da aziende già individuate fuori da LinkedIn.
 - Apri la ricerca in Chrome (nuova scheda) oppure usa quella che l'utente ha già impostato. Non aggirare i limiti di ricerca: se LinkedIn li segnala, fermati.
 
 ### 2. Lotto di valutazione (max 10 profili)
 Per ogni profilo raccogli, dalla pagina pubblica visibile all'utente:
 - nome, ruolo attuale, azienda, zona, anzianità nel ruolo;
-- dimensione e settore dell'azienda (dalla pagina aziendale, con cautela: sono dati dichiarati);
+- dimensione e settore dell'azienda, verificati come descritto in «Verifica della dimensione aziendale»;
 - sezione Informazioni e ultimi post o attività, per capire temi e momento;
 - se c'è già un collegamento in comune o una relazione precedente.
+
+### Verifica della dimensione aziendale (prima di leggere il resto)
+
+Controlla l'azienda **prima** di leggere post e attività: se è fuori target, scarta il profilo e risparmi pagine su LinkedIn. Fonti, in ordine:
+
+1. **Pagina aziendale LinkedIn**: fascia dichiarata (es. "11-50") e numero di persone che la indicano come datore di lavoro. Il numero di persone è un **minimo**: se supera la fascia, la fascia è sbagliata.
+2. **Ricerca web** (WebSearch, non il browser di LinkedIn): `<ragione sociale> <città> fatturato dipendenti`. Esistono portali che ripubblicano i dati del Registro Imprese (es. aziende.it, la parte pubblica di Atoka, Ufficio Camerale). Usa il **fatturato** come riscontro principale: i dati sui dipendenti dei portali gratuiti sono spesso a fasce, datati o incoerenti (in un test la stessa pagina riportava 0-9 dipendenti in tabella e 20-49 nel testo). Riferimento: piccola impresa sotto 50 dipendenti e 10 milioni di fatturato; media sotto 250 dipendenti e 50 milioni.
+3. **Sito aziendale**: pagina del team, "chi siamo", offerte di lavoro.
+
+Per ogni azienda registra la dimensione, la fonte e un grado di affidabilità:
+- **confermata**: almeno due fonti indipendenti concordano;
+- **stimata**: una sola fonte, oppure fonti incoerenti (scrivi l'intervallo e non scegliere il dato più comodo);
+- **non verificabile**: nessuna fonte utile.
+
+Scarta subito se l'azienda è chiaramente fuori target (sotto i 10 o sopra i 250 dipendenti, gruppo o multinazionale). Nel punteggio «Azienda nel target»: affidabilità confermata = punteggio pieno, stimata = massimo 15 su 25, non verificabile = massimo 12 su 25. La ricerca riguarda l'azienda, non la persona.
 
 ### 3. Punteggio (0-100)
 | Criterio | Peso |
@@ -72,7 +88,7 @@ I testi citano un elemento reale del profilo, parlano del problema del destinata
 
 ### 5. Consegna del lotto
 Salva o aggiorna la tabella con queste colonne:
-`data | nome | ruolo | azienda | zona | settore | dimensione | link profilo | punteggio | motivo | segnale | azione proposta | stato | prossimo passo`
+`data | nome | ruolo | azienda | zona | settore | dimensione | fonte e affidabilità dimensione | link profilo | punteggio | motivo | segnale | azione proposta | stato | prossimo passo`
 
 Stati ammessi: `da valutare`, `scartato`, `da contattare`, `contattato`, `risposto`, `in corso`, `non interessato`, `non contattare`.
 
